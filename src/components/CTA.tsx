@@ -25,16 +25,15 @@ const CTA = () => {
             LocalRoots is your home.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button variant="hero" size="lg">
-              Start Shopping
-            </Button>
-            <Button
-              variant="hero-outline"
-              size="lg"
-              className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
-            >
-              Register Your Shop
-            </Button>
+            <Link to="/products">
+              <Button variant="hero" size="lg">Start Shopping</Button>
+            </Link>
+            <Link to="/auth">
+              <Button variant="hero-outline" size="lg"
+                className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
+                Register Your Shop
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </div>
