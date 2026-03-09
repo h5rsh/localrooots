@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-marketplace.jpg";
@@ -54,12 +55,14 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.45 }}
             className="flex flex-wrap gap-4"
           >
-            <Button variant="hero" size="lg">
-              Explore Local Shops
-            </Button>
-            <Button variant="hero-outline" size="lg" className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
-              Become a Seller
-            </Button>
+            <Link to="/products">
+              <Button variant="hero" size="lg">Explore Local Shops</Button>
+            </Link>
+            <Link to="/auth">
+              <Button variant="hero-outline" size="lg" className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
+                Become a Seller
+              </Button>
+            </Link>
           </motion.div>
 
           <motion.div
